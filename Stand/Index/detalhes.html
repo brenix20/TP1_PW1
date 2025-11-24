@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mazda Miata MX-5 NA - StandPW1</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">StandPW1</h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#inventory">Inventário</a>
+        <a href="financiamento.html">Financiamento</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <a href="index.html#inventory" style="color:#0066cc;text-decoration:none">← Voltar ao inventário</a>
+        
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:1rem">
+         
+          <div>
+            <img src="imagens/miata.jpeg" alt="Mazda Miata MX-5 NA" style="width:100%;border:1px solid #ddd">        
+          </div>
+          <div>
+            <h2 style="margin-bottom:0.5rem">Mazda Miata MX-5 NA</h2>
+            <p class="price" style="font-size:1.8rem;margin:0.5rem 0">€8.500</p>
+            
+            <div style="background:#f9f9f9;padding:1rem;margin:1rem 0">
+              <h3 style="margin-bottom:0.5rem">Especificações</h3>
+              <table style="width:100%;font-size:0.9rem">
+                <tr><td style="padding:0.3rem 0;color:#666">Ano:</td><td>1990</td></tr>
+                <tr><td style="padding:0.3rem 0;color:#666">Quilómetros:</td><td>45.000 km</td></tr>
+                <tr><td style="padding:0.3rem 0;color:#666">Combustível:</td><td>Gasolina</td></tr>
+                <tr><td style="padding:0.3rem 0;color:#666">Transmissão:</td><td>Manual 5 velocidades</td></tr>
+                <tr><td style="padding:0.3rem 0;color:#666">Potência:</td><td>115 cv</td></tr>
+                <tr><td style="padding:0.3rem 0;color:#666">Cor:</td><td>Vermelho</td></tr>
+              </table>
+            </div>
+
+            <h3 style="margin:1rem 0 0.5rem">Equipamento</h3>
+            <ul style="margin:0 0 0 1.5rem;color:#555;line-height:1.8">
+              <li>Capota manual em bom estado</li>
+              <li>Direção assistida</li>
+              <li>Rádio com Bluetooth</li>
+              <li>Bancos em pele</li>
+              <li>Pneus novos</li>
+              <li>Revisão completa efetuada</li>
+            </ul>
+
+            <div style="margin-top:1.5rem;display:flex;gap:1rem">
+              <a href="financiamento.html" class="btn">Simular financiamento</a>
+              <a href="index.html#contact" class="btn" style="background:#28a745">Contactar</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;background:#fff;padding:1.5rem;border:1px solid #ddd">
+          <h3>Descrição</h3>
+          <p style="color:#555;line-height:1.6;margin-top:0.5rem">
+            Mazda MX-5 NA em excelente estado de conservação. Este icónico roadster japonês oferece uma experiência de condução única, 
+            com motor atmosférico de 1.6L e transmissão manual de 5 velocidades. Perfeito para quem procura diversão ao volante 
+            sem compromissos. O veículo foi sempre bem cuidado, com histórico de manutenção completo. Capota em bom estado, 
+            sem rasgos. Aceita retoma e financiamento até 60 meses.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> StandPW1 — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
